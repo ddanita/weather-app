@@ -1,0 +1,143 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #43affc;
+  padding: 24px 12px;
+}
+
+.container {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(7, 121, 222) 0%,
+    rgb(20, 72, 140) 90%
+  );
+  color: white;
+  width: 300px;
+  border-radius: 7px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  padding: 24px 12px;
+}
+
+#cityy {
+  align-items: flex-start;
+  font-size: 16px;
+  text-align: start;
+  padding: 2px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 3px;
+  width: 130px;
+  font-family: "Poppins", sans-serif;
+}
+#search {
+  display: inline;
+  width: 68px;
+  padding: 2%;
+  border-radius: 6px;
+  margin-left: -7px;
+}
+#location {
+  margin-left: -12%;
+  width: 63px;
+  padding: 3px;
+  font-size: 9px;
+  border-radius: 50px;
+  background: #26b91d;
+  color: darkblue;
+  border-color: lightskyblue;
+}
+
+#pic {
+  font-size: 50px;
+  display: flex;
+  padding: 5px 30px 0px 30px;
+  color: rgb(233, 236, 17);
+  margin: 10px 0px 0px 0px;
+  margin-left: 95px;
+  align-items: center;
+  justify-content: center;
+}
+#description {
+  font-size: 17px;
+  color: rgb(233, 236, 17);
+  margin-left: -100px;
+}
+h2 {
+  display: flex;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: #80c0ee;
+  padding: 0px 15px 0px 15px;
+  margin: 0px 0px 0px 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  display: flex;
+  box-sizing: border-box;
+  font-size: 44px;
+  font-weight: 400;
+  color: hsl(180, 40%, 98%);
+  margin-top: -30px;
+  padding: 0px 15px 0px 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#cesLink,
+#fahLink {
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(193, 224, 12);
+  display: inline-flex;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 45px;
+  text-decoration: none;
+}
+.currentDate {
+  text-align: right;
+  display: flex;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  margin-left: 90px;
+  margin-top: -27px;
+}
+span .fa-clock {
+  color: #e7edf1;
+  font-size: 20px;
+}
+
+.fa-temperature-low {
+  font-size: 25px;
+  color: #93cdf7;
+}
+
+.col-2 {
+  font-size: small;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.col-4 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: small;
+}
+.fa-cloud-sun {
+  color: rgb(238, 238, 156);
+}
+.fa-cloud-rain {
+  color: rgb(146, 217, 245);
+}
+.fa-sun {
+  color: yellow;
+}
+.fa-cloud-sun-rain {
+  color: rgb(156, 252, 11);
+}
