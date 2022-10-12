@@ -17,117 +17,125 @@
     <title>Weather Framework</title>
   </head>
   <body>
-    <div class="container">
-      <div class="city">
-        <form id="search-form">
+    <div id="wrapper">
+      <div class="container">
+        <div class="city">
+          <form id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Type city name......"
+                  autocomplete="off"
+                  id="cityy" />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary shadow-sm"
+                  id="search" />
+              </div>
+              <div class="col-3">
+                <button id="location">My Location</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="sun-icon">
           <div class="row">
-            <div class="col-6">
-              <input
-                type="search"
-                placeholder="Type city name......"
-                autocomplete="off"
-                id="cityy" />
+            <h1 id="pic">
+              <div class="col-8">
+                <i class="fa-solid fa-sun"></i>
+              </div>
+              <div class="col-4">
+                &nbsp;&nbsp;<span id="description">Partly Cloudy</span>
+              </div>
+            </h1>
+          </div>
+          <h2 class="h2" id="state"></h2>
+          <h3>
+            <span id="temp"></span>
+            <span>
+              <a href="#" id="cesLink">°C</a>
+            </span>
+          </h3>
+          <h5>
+            <span class="currentDate">Fri Aug 25, 10:00 </span>
+          </h5>
+
+          <div class="row">
+            <div class="col-4">
+              <i class="fa-solid fa-temperature-low"></i>
+              <br />
+              Min - Max
+              <br />
+              <span id="mntemp">17</span>°c - <span id="mxtemp">30</span>°c
             </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-primary shadow-sm"
-                id="search" />
+            <hr />
+          </div>
+
+          <div class="row">
+            <div class="col-2">
+              <strong>Sat</strong> <br />
+              <em>rain</em> <br />17°c
+              <p><i class="fa-solid fa-cloud-rain"></i></p>
             </div>
-            <div class="col-3">
-              <button id="location">My Location</button>
+
+            <div class="col-2">
+              <strong>Sun</strong> <br />
+              <em>sunny</em> <br />29°c
+              <p><i class="fa-solid fa-cloud"></i></p>
+            </div>
+
+            <div class="col-2">
+              <strong>Mon</strong> <br />
+              <em>bright</em> <br />22°c
+              <p><i class="fa-solid fa-cloud-sun"></i></p>
+            </div>
+
+            <div class="col-2">
+              <strong>Tue</strong> <br />
+              <em>sunny</em> <br />26°c
+              <p><i class="fa-regular fa-sun"></i></p>
+            </div>
+
+            <div class="col-2">
+              <strong>Wed</strong> <br />
+              <em>windy</em> <br />23°c
+              <p><i class="fa-solid fa-cloud-sun-rain"></i></p>
+            </div>
+
+            <div class="col-2">
+              <strong>Thu</strong> <br />
+              <em>bright</em> <br />30°c
+              <p><i class="fa-solid fa-sun"></i></p>
             </div>
           </div>
-        </form>
-      </div>
-      <div class="sun-icon">
-        <div class="row">
-          <h1 id="pic">
-            <div class="col-8">
-              <i class="fa-solid fa-sun"></i>
+        </div>
+        <footer>
+          <div class="row">
+            <div class="col-4">
+              Wind <br />
+              <span id="speed">5</span>km/h
             </div>
             <div class="col-4">
-              &nbsp;&nbsp;<span id="description">Partly Cloudy</span>
+              Humidity <br />
+              <span id="cold">90</span>%
             </div>
-          </h1>
-        </div>
-        <h2 class="h2" id="state"></h2>
-        <h3>
-          <span id="temp"></span>
-          <span>
-            <a href="#" id="cesLink">°C</a>
-          </span>
-        </h3>
-        <h5>
-          <span class="currentDate">Fri Aug 25, 10:00 </span>
-        </h5>
-
-        <div class="row">
-          <div class="col-4">
-            <i class="fa-solid fa-temperature-low"></i>
-            <br />
-            Min - Max
-            <br />
-            <span id="mntemp">17</span>°c - <span id="mxtemp">30</span>°c
+            <div class="col-4">
+              Precipitation <br />
+              <span id="fall">50</span>%
+            </div>
           </div>
-          <hr />
-        </div>
-
-        <div class="row">
-          <div class="col-2">
-            <strong>Sat</strong> <br />
-            <em>rain</em> <br />17°c
-            <p><i class="fa-solid fa-cloud-rain"></i></p>
-          </div>
-
-          <div class="col-2">
-            <strong>Sun</strong> <br />
-            <em>sunny</em> <br />29°c
-            <p><i class="fa-solid fa-cloud"></i></p>
-          </div>
-
-          <div class="col-2">
-            <strong>Mon</strong> <br />
-            <em>bright</em> <br />22°c
-            <p><i class="fa-solid fa-cloud-sun"></i></p>
-          </div>
-
-          <div class="col-2">
-            <strong>Tue</strong> <br />
-            <em>sunny</em> <br />26°c
-            <p><i class="fa-regular fa-sun"></i></p>
-          </div>
-
-          <div class="col-2">
-            <strong>Wed</strong> <br />
-            <em>windy</em> <br />23°c
-            <p><i class="fa-solid fa-cloud-sun-rain"></i></p>
-          </div>
-
-          <div class="col-2">
-            <strong>Thu</strong> <br />
-            <em>bright</em> <br />30°c
-            <p><i class="fa-solid fa-sun"></i></p>
-          </div>
-        </div>
+        </footer>
       </div>
-      <footer>
-        <div class="row">
-          <div class="col-4">
-            Wind <br />
-            <span id="speed">5</span>km/h
-          </div>
-          <div class="col-4">
-            Humidity <br />
-            <span id="cold">90</span>%
-          </div>
-          <div class="col-4">
-            Precipitation <br />
-            <span id="fall">50</span>%
-          </div>
-        </div>
-      </footer>
+      <small>
+        <a href="https://github.com/ddanita/weather-app" target="_blank"
+          >Open-source code</a
+        >
+        by Danita Okeya
+      </small>
     </div>
     <script src="index.js"></script>
   </body>
